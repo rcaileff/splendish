@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840CC1B521B5EAAE00B42FAB /* splendishTests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1B421B5EAAE00B42FAB /* splendishTests_iOS.swift */; };
+		840CC1C321B5EAC100B42FAB /* splendishTests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1C221B5EAC100B42FAB /* splendishTests_macOS.swift */; };
+		840CC1CF21B5EBC000B42FAB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1CE21B5EBC000B42FAB /* Player.swift */; };
+		840CC1D021B5EBC000B42FAB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1CE21B5EBC000B42FAB /* Player.swift */; };
+		840CC1D221B5EBEE00B42FAB /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1D121B5EBEE00B42FAB /* Gem.swift */; };
+		840CC1D321B5EBEE00B42FAB /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1D121B5EBEE00B42FAB /* Gem.swift */; };
+		840CC1D621B5EC3600B42FAB /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1D521B5EC3600B42FAB /* PlayerTests.swift */; };
+		840CC1D721B5EC3600B42FAB /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1D521B5EC3600B42FAB /* PlayerTests.swift */; };
+		840CC1D921B5ECCB00B42FAB /* GemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1D821B5ECCB00B42FAB /* GemTests.swift */; };
+		840CC1DA21B5ECCB00B42FAB /* GemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC1D821B5ECCB00B42FAB /* GemTests.swift */; };
 		84B48A5F21A619330051CFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B48A5E21A619330051CFD7 /* AppDelegate.swift */; };
 		84B48A6121A619330051CFD7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B48A6021A619330051CFD7 /* GameViewController.swift */; };
 		84B48A6421A619330051CFD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B48A6221A619330051CFD7 /* Main.storyboard */; };
@@ -24,7 +34,34 @@
 		84B48A7E21A619330051CFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B48A5621A619330051CFD7 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		840CC1B721B5EAAE00B42FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B48A4E21A619300051CFD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B48A5A21A619330051CFD7;
+			remoteInfo = "splendish iOS";
+		};
+		840CC1C521B5EAC100B42FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B48A4E21A619300051CFD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B48A6C21A619330051CFD7;
+			remoteInfo = "splendish macOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		840CC1B221B5EAAE00B42FAB /* splendishTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "splendishTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840CC1B421B5EAAE00B42FAB /* splendishTests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splendishTests_iOS.swift; sourceTree = "<group>"; };
+		840CC1B621B5EAAE00B42FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840CC1C021B5EAC100B42FAB /* splendishTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "splendishTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840CC1C221B5EAC100B42FAB /* splendishTests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splendishTests_macOS.swift; sourceTree = "<group>"; };
+		840CC1C421B5EAC100B42FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840CC1CE21B5EBC000B42FAB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		840CC1D121B5EBEE00B42FAB /* Gem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
+		840CC1D521B5EC3600B42FAB /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
+		840CC1D821B5ECCB00B42FAB /* GemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemTests.swift; sourceTree = "<group>"; };
 		84B48A5321A619300051CFD7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		84B48A5421A619300051CFD7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		84B48A5521A619300051CFD7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -43,6 +80,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		840CC1AF21B5EAAE00B42FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840CC1BD21B5EAC100B42FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84B48A5821A619330051CFD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,12 +111,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840CC1B321B5EAAE00B42FAB /* splendishTests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				840CC1B421B5EAAE00B42FAB /* splendishTests_iOS.swift */,
+				840CC1B621B5EAAE00B42FAB /* Info.plist */,
+			);
+			path = "splendishTests iOS";
+			sourceTree = "<group>";
+		};
+		840CC1C121B5EAC100B42FAB /* splendishTests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				840CC1C221B5EAC100B42FAB /* splendishTests_macOS.swift */,
+				840CC1C421B5EAC100B42FAB /* Info.plist */,
+			);
+			path = "splendishTests macOS";
+			sourceTree = "<group>";
+		};
+		840CC1D421B5EC0200B42FAB /* splendishTests Shared */ = {
+			isa = PBXGroup;
+			children = (
+				840CC1D521B5EC3600B42FAB /* PlayerTests.swift */,
+				840CC1D821B5ECCB00B42FAB /* GemTests.swift */,
+			);
+			path = "splendishTests Shared";
+			sourceTree = "<group>";
+		};
 		84B48A4D21A619300051CFD7 = {
 			isa = PBXGroup;
 			children = (
 				84B48A5221A619300051CFD7 /* splendish Shared */,
 				84B48A5D21A619330051CFD7 /* splendish iOS */,
 				84B48A6E21A619330051CFD7 /* splendish macOS */,
+				840CC1D421B5EC0200B42FAB /* splendishTests Shared */,
+				840CC1B321B5EAAE00B42FAB /* splendishTests iOS */,
+				840CC1C121B5EAC100B42FAB /* splendishTests macOS */,
 				84B48A5C21A619330051CFD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +158,8 @@
 				84B48A5421A619300051CFD7 /* GameScene.sks */,
 				84B48A5521A619300051CFD7 /* GameScene.swift */,
 				84B48A5621A619330051CFD7 /* Assets.xcassets */,
+				840CC1CE21B5EBC000B42FAB /* Player.swift */,
+				840CC1D121B5EBEE00B42FAB /* Gem.swift */,
 			);
 			path = "splendish Shared";
 			sourceTree = "<group>";
@@ -86,6 +169,8 @@
 			children = (
 				84B48A5B21A619330051CFD7 /* splendish.app */,
 				84B48A6D21A619330051CFD7 /* splendish.app */,
+				840CC1B221B5EAAE00B42FAB /* splendishTests iOS.xctest */,
+				840CC1C021B5EAC100B42FAB /* splendishTests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +201,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		840CC1B121B5EAAE00B42FAB /* splendishTests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840CC1B921B5EAAE00B42FAB /* Build configuration list for PBXNativeTarget "splendishTests iOS" */;
+			buildPhases = (
+				840CC1AE21B5EAAE00B42FAB /* Sources */,
+				840CC1AF21B5EAAE00B42FAB /* Frameworks */,
+				840CC1B021B5EAAE00B42FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840CC1B821B5EAAE00B42FAB /* PBXTargetDependency */,
+			);
+			name = "splendishTests iOS";
+			productName = "splendishTests iOS";
+			productReference = 840CC1B221B5EAAE00B42FAB /* splendishTests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		840CC1BF21B5EAC100B42FAB /* splendishTests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840CC1C721B5EAC100B42FAB /* Build configuration list for PBXNativeTarget "splendishTests macOS" */;
+			buildPhases = (
+				840CC1BC21B5EAC100B42FAB /* Sources */,
+				840CC1BD21B5EAC100B42FAB /* Frameworks */,
+				840CC1BE21B5EAC100B42FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840CC1C621B5EAC100B42FAB /* PBXTargetDependency */,
+			);
+			name = "splendishTests macOS";
+			productName = "splendishTests macOS";
+			productReference = 840CC1C021B5EAC100B42FAB /* splendishTests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		84B48A5A21A619330051CFD7 /* splendish iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B48A8121A619330051CFD7 /* Build configuration list for PBXNativeTarget "splendish iOS" */;
@@ -160,6 +281,14 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Rachel Caileff";
 				TargetAttributes = {
+					840CC1B121B5EAAE00B42FAB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 84B48A5A21A619330051CFD7;
+					};
+					840CC1BF21B5EAC100B42FAB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 84B48A6C21A619330051CFD7;
+					};
 					84B48A5A21A619330051CFD7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -183,11 +312,27 @@
 			targets = (
 				84B48A5A21A619330051CFD7 /* splendish iOS */,
 				84B48A6C21A619330051CFD7 /* splendish macOS */,
+				840CC1B121B5EAAE00B42FAB /* splendishTests iOS */,
+				840CC1BF21B5EAC100B42FAB /* splendishTests macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		840CC1B021B5EAAE00B42FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840CC1BE21B5EAC100B42FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84B48A5921A619330051CFD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,13 +359,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		840CC1AE21B5EAAE00B42FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840CC1D621B5EC3600B42FAB /* PlayerTests.swift in Sources */,
+				840CC1D921B5ECCB00B42FAB /* GemTests.swift in Sources */,
+				840CC1B521B5EAAE00B42FAB /* splendishTests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840CC1BC21B5EAC100B42FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840CC1D721B5EC3600B42FAB /* PlayerTests.swift in Sources */,
+				840CC1DA21B5ECCB00B42FAB /* GemTests.swift in Sources */,
+				840CC1C321B5EAC100B42FAB /* splendishTests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84B48A5721A619330051CFD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840CC1CF21B5EBC000B42FAB /* Player.swift in Sources */,
 				84B48A7B21A619330051CFD7 /* GameScene.swift in Sources */,
 				84B48A6121A619330051CFD7 /* GameViewController.swift in Sources */,
 				84B48A5F21A619330051CFD7 /* AppDelegate.swift in Sources */,
+				840CC1D221B5EBEE00B42FAB /* Gem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,13 +395,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840CC1D021B5EBC000B42FAB /* Player.swift in Sources */,
 				84B48A7C21A619330051CFD7 /* GameScene.swift in Sources */,
 				84B48A7221A619330051CFD7 /* GameViewController.swift in Sources */,
 				84B48A7021A619330051CFD7 /* AppDelegate.swift in Sources */,
+				840CC1D321B5EBEE00B42FAB /* Gem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840CC1B821B5EAAE00B42FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B48A5A21A619330051CFD7 /* splendish iOS */;
+			targetProxy = 840CC1B721B5EAAE00B42FAB /* PBXContainerItemProxy */;
+		};
+		840CC1C621B5EAC100B42FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B48A6C21A619330051CFD7 /* splendish macOS */;
+			targetProxy = 840CC1C521B5EAC100B42FAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84B48A6221A619330051CFD7 /* Main.storyboard */ = {
@@ -264,6 +446,99 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		840CC1BA21B5EAAE00B42FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4Z3XNX7TJ;
+				INFOPLIST_FILE = "splendishTests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcaileff.splendishTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/splendish.app/splendish";
+			};
+			name = Debug;
+		};
+		840CC1BB21B5EAAE00B42FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4Z3XNX7TJ;
+				INFOPLIST_FILE = "splendishTests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcaileff.splendishTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/splendish.app/splendish";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840CC1C821B5EAC100B42FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M4Z3XNX7TJ;
+				INFOPLIST_FILE = "splendishTests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcaileff.splendishTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/splendish.app/Contents/MacOS/splendish";
+			};
+			name = Debug;
+		};
+		840CC1C921B5EAC100B42FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M4Z3XNX7TJ;
+				INFOPLIST_FILE = "splendishTests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rcaileff.splendishTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/splendish.app/Contents/MacOS/splendish";
+			};
+			name = Release;
+		};
 		84B48A7F21A619330051CFD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,6 +736,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		840CC1B921B5EAAE00B42FAB /* Build configuration list for PBXNativeTarget "splendishTests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840CC1BA21B5EAAE00B42FAB /* Debug */,
+				840CC1BB21B5EAAE00B42FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840CC1C721B5EAC100B42FAB /* Build configuration list for PBXNativeTarget "splendishTests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840CC1C821B5EAC100B42FAB /* Debug */,
+				840CC1C921B5EAC100B42FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84B48A5121A619300051CFD7 /* Build configuration list for PBXProject "splendish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

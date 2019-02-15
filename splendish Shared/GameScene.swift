@@ -11,30 +11,37 @@ import SpriteKit
 class GameScene: SKScene {
     
     
-    fileprivate var label : SKLabelNode?
+//    fileprivate var label : SKLabelNode?
     fileprivate var spinnyNode : SKShapeNode?
 
+    var entityManager: EntityManager!
     
-    class func newGameScene() -> GameScene {
-        // Load 'GameScene.sks' as an SKScene.
-        guard let scene = SKScene(fileNamed: "GameScene") as? GameScene else {
-            print("Failed to load GameScene.sks")
-            abort()
-        }
-        
-        // Set the scale mode to scale to fit the window
-        scene.scaleMode = .aspectFill
-        
+//    class func newGameScene() -> GameScene {
+//        // Load 'GameScene.sks' as an SKScene.
+//        guard let scene = SKScene(fileNamed: "GameScene") as? GameScene else {
+//            print("Failed to load GameScene.sks")
+//            abort()
+//        }
+//
+//        // Set the scale mode to scale to fit the window
+//        scene.scaleMode = .aspectFill
+//
+//        return scene
+//  }
+
+    class func newGameScene(aspectRatio: CGFloat) -> GameScene {
+        let scene = GameScene(size:CGSize(width: 640 * aspectRatio, height: 640))
+        scene.backgroundColor = .gray
         return scene
     }
     
     func setUpScene() {
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+//        // Get label node from scene and store it for use later
+//        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
+//        if let label = self.label {
+//            label.alpha = 0.0
+//            label.run(SKAction.fadeIn(withDuration: 2.0))
+//        }
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -47,29 +54,45 @@ class GameScene: SKScene {
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
             
-            #if os(watchOS)
-                // For watch we just periodically create one of these and let it spin
-                // For other platforms we let user touch/mouse events create these
-                spinnyNode.position = CGPoint(x: 0.0, y: 0.0)
-                spinnyNode.strokeColor = SKColor.red
-                self.run(SKAction.repeatForever(SKAction.sequence([SKAction.wait(forDuration: 2.0),
-                                                                   SKAction.run({
-                                                                       let n = spinnyNode.copy() as! SKShapeNode
-                                                                       self.addChild(n)
-                                                                   })])))
-            #endif
         }
     }
     
-    #if os(watchOS)
-    override func sceneDidLoad() {
-        self.setUpScene()
-    }
-    #else
     override func didMove(to view: SKView) {
         self.setUpScene()
+        
+        entityManager = EntityManager(scene: self)
+        
+        let diamondCommodity = CommodityEntity(color: .white)
+        if let spriteComponent = diamondCommodity.component(ofType: SpriteComponent.self) {
+            spriteComponent.node.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
+        }
+        entityManager.add(diamondCommodity)
+        
+        let player1 = PlayerEntity(name: "Jaimie", owner: .player1)
+        if let nameComponent = player1.component(ofType: NameComponent.self) {
+            nameComponent.node.position = CGPoint(x: self.size.width * 1/4, y: self.size.height * 3/4)
+        }
+        entityManager.add(player1)
+
+        let player2 = PlayerEntity(name: "Pat", owner: .player2)
+        if let nameComponent = player2.component(ofType: NameComponent.self) {
+            nameComponent.node.position = CGPoint(x: self.size.width * 3/4, y: self.size.height * 3/4)
+        }
+        entityManager.add(player2)
+
+        let player3 = PlayerEntity(name: "Alex", owner: .player3)
+        if let nameComponent = player3.component(ofType: NameComponent.self) {
+            nameComponent.node.position = CGPoint(x: self.size.width * 1/4, y: self.size.height * 1/4)
+        }
+        entityManager.add(player3)
+
+        let player4 = PlayerEntity(name: "Sasha", owner: .player4)
+        if let nameComponent = player4.component(ofType: NameComponent.self) {
+            nameComponent.node.position = CGPoint(x: self.size.width * 3/4, y: self.size.height * 1/4)
+        }
+        entityManager.add(player4)
+        
     }
-    #endif
 
     func makeSpinny(at pos: CGPoint, color: SKColor) {
         if let spinny = self.spinnyNode?.copy() as! SKShapeNode? {
@@ -89,9 +112,9 @@ class GameScene: SKScene {
 extension GameScene {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
+//        if let label = self.label {
+//            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
+//        }
         
         for t in touches {
             self.makeSpinny(at: t.location(in: self), color: SKColor.green)
@@ -125,9 +148,9 @@ extension GameScene {
 extension GameScene {
 
     override func mouseDown(with event: NSEvent) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
+//        if let label = self.label {
+//            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
+//        }
         self.makeSpinny(at: event.location(in: self), color: SKColor.green)
     }
     

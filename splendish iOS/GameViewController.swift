@@ -15,7 +15,9 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scene = GameScene.newGameScene()
+//        let scene = GameScene.newGameScene()
+        let aspectRatio = view.bounds.size.width / view.bounds.size.height
+        let scene = GameScene.newGameScene(aspectRatio: aspectRatio)
 
         // Present the scene
         let skView = self.view as! SKView

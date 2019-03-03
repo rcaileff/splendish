@@ -1,8 +1,8 @@
 //
-//  NameComponent.swift
+//  InventoryComponent.swift
 //  splendish
 //
-//  Created by Rachel Caileff on 3/3/19.
+//  Created by Rachel Caileff on 3/2/19.
 //  Copyright © 2019 Rachel Caileff. All rights reserved.
 //
 
